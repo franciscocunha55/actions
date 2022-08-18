@@ -2,7 +2,8 @@ name: Create terraform plan
 
 on:
   pull_request:
-    branches: [ master ]
+    paths:
+      - '.'
 
 env:
   AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}

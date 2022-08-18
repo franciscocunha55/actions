@@ -6,7 +6,7 @@ resource "aws_instance" "name1" {
   vpc_security_group_ids = [aws_security_group.sg_jumper.id]
   associate_public_ip_address = "true"
   tags = {
-    Name = "jumper11"
+    Name = "jumper111"
 
   }
 }
