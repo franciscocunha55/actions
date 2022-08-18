@@ -27,7 +27,7 @@ jobs:
 
       - name : add node
       # https://github.com/actions/setup-node
-      - uses: actions/setup-node@v1
+        uses: actions/setup-node@v1
         with:
           node-version: '14'
 
