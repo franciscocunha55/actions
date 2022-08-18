@@ -13,9 +13,12 @@ jobs:
   plan-dev:
     name: ' terraform plan dev'
     runs-on: self-hosted
+    env:
+      TF_WORKING_DIR: '.'
     defaults:
       run:
         shell: bash
+        working-directory: ${{ env.TF_WORKING_DIR }}
 
     steps:
         # checkout of the code
