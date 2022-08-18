@@ -32,7 +32,7 @@ jobs:
           node-version: '14'
 
       - name: Run a one-line script
-        run: sudo ln -s /usr/bin/nodejs /usr/local/bin/node
+        run: sudo ln -s /usr/bin/node /usr/local/bin/node
 
       - name: Setup Terraform
         uses: hashicorp/setup-terraform@v2
